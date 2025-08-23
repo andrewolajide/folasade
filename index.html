@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Content Creation, Social media visibility" />
+    <meta name="description" content="content creation and visual story telling with Folashade Oluwanifemi" />
+    <link rel="stylesheet" href="styles.css"/>
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+     <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      />
+    </noscript>
+    <title>Folasade Oluwanifemi</title>
+</head>
+
+<body id="top">
+  <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-left">
+          <a href="/" class="nav-title"><h3>Folasade Oluwanifemi</h3></a>
+          <p>Lifestyle . Fashion . Motivation</p>
+        </div>
+        <div class="nav-right">
+            <a href="/#about">About Me</a>
+            <a href="#my-work">My Work</a>
+            <a href="/#contact">Contact Me</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+            <ul class="mobile-menu">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#my-work">My Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        
+    </div>
+
+  </nav>
+  <section class="hero-section" id="hero-section">
+    <div class="hero-pic">
+        <img
+          src="images/hero.png"
+          alt="Hero Picture"
+          class="hero-img"
+        />
+      </div>
+      <div class="hero-text">
+        <p>CONTENT CREATOR & ASPIRING ACTOR</p>
+            <h1>Meet<br>Folasade Oluwanifemi<br>(Shaidy)</h1>
+            <a href="#contact"><button
+            onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
+        <span>Contact Me</span><i class="fas fa-arrow-down"></i>
+    </button></a>
+      </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am a multi-passionate creative who tells stories through visuals, voice and emotion. As a content creator and upcoming actor, I use every video, reel and scene as an opportunity to inspire, connect and engage.</p>
+        <p>My work blends cinematic storytelling, fashion-driven visuals and motivational themes — turning everyday ideas into impactful content that resonates with real people.</p>
+        <p>Whether I’m in front of the camera acting out a scene or creating a lifestyle reel, I value authenticity and intentionality in every project.</p>
+    </div>
+    <div class="about-img">
+        <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic"/>
+    </div>
+  </section>
+
+  <section class="content-types">
+    <h2>Content Types</h2>
+
+     <button class="scroll-btn left" onclick="scrollAwards('right')">
+        &#10095;
+      </button>
+      <button class="scroll-btn right" onclick="scrollAwards('left')">
+        &#10094;
+      </button>
+      
+    <div class="content-row">
+        <div class="content-box"><img src="images/content1.png" alt="Lifestyle Icon" class="content-img">
+        <p>Lifestyle Reels</p></div>
+         <div class="content-box"><img src="images/content2.png" alt="Lifestyle Icon" class="content-img">
+        <p>Fashion Modelling</p></div>
+          <div class="content-box"><img src="images/content3.png" alt="Lifestyle Icon" class="content-img">
+        <p>Motivational Storytelling</p></div>
+           <div class="content-box"><img src="images/content4.png" alt="Lifestyle Icon" class="content-img">
+        <p>Short Videos</p></div>
+            <div class="content-box"><img src="images/content5.png" alt="Lifestyle Icon" class="content-img">
+            <p>Product Ads</p></div>
+            
+    </div>
+  </section>
+
+<section class="my-work" id="my-work">
+
+ <h2>My Work</h2>
+
+  
+  <button class="scroll-btn right" onclick="scrollVideos('right')">&#10094;</button>
+  <button class="scroll-btn left" onclick="scrollVideos('left')">&#10095;</button>
+
+
+  <div class="video-row">
+    <video controls autoplay muted loop playsinline>
+      <source src="video/mywork1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls autoplay muted loop playsinline>
+      <source src="video/mywork2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls autoplay muted loop playsinline>
+      <source src="video/mywork3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls autoplay muted loop playsinline>
+      <source src="video/mywork4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls autoplay muted loop playsinline>
+      <source src="video/mywork5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+  <section class="contactme" id="contact">
+    <h2>Contact Me</h2>
+    <div class="form-wrapper">
+        <h3 class="fade-slide-left delay-1">Why work with me?</h3>
+        <p class="fade-in delay-2">
+          I create content that blends storytelling, visuals, and emotions to inspire audiences and connect brands to people in a real, lasting way
+        </p>
+       <form
+          action="https://formsubmit.co/folasadeo680@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Honeypot anti-spam field (invisible to humans) -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <div class="form-row">
+            <div class="form-group fade-in delay-4">
+              <input type="text" id="name" name="name" placeholder="" required />
+              <label for="name">Full Name*</label>
+            </div>
+            <div class="form-group fade-in delay-5">
+              <input type="email" id="email" name="email" placeholder="" required/>
+               <label for="email">Valid Email*</label>
+            </div>
+            <div class="form-group fade-in delay-6">
+               <input type="tel" id="phone" name="phone" placeholder="" required />
+              <label for="phone">Phone Number*</label>
+            </div>
+          </div>
+          <div class="form-group fade-in delay-7">
+            <textarea id="message" name="message" rows="5" placeholder="" required></textarea>
+            <label for="message">Type your message here*</label>
+          </div>
+          <div class="form-check fade-in delay-8">
+            <input type="checkbox" id="privacy" required />
+            <label for="privacy"
+              >I Agree to <a href="privacy.html">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="submit-btn scale-in delay-9">
+            Submit
+          </button>
+        </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+        <p><strong>Folasade Oluwanifemi</strong></p>
+    </div>
+    <div class="social-icons">
+              <a
+                href="https://www.instagram.com/shaiidy001/?igsh=MXNndWFoczdwdTI1aQ%3D%3D#"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+             
+              <a
+                href="https://www.tiktok.com/@shaidy_nifemi?_t=ZS-8z24umzsqbg&_r=1"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+    </div>
+    <div class="top"><a href="#top" onclick="scrollToTop(event)">Back to Top</a></div>
+              <p class="footer-copy">© 2025 Folasade Oluwanifemi. All rights reserved.</p> 
+  </footer>
+
+  <script>
+      function scrollAwards(direction) {
+        const scrollContainer = document.querySelector(".content-row");
+        const scrollAmount = 330;
+        scrollContainer.scrollBy({
+          left: direction === "left" ? -scrollAmount : scrollAmount,
+          behavior: "smooth",
+        });
+      }
+
+      function toggleMenu(el) {
+        const menu = document.querySelector(".mobile-menu");
+        el.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".mobile-menu");
+
+        if (
+          !hamburger.contains(event.target) &&
+          !menu.contains(event.target) &&
+          hamburger.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          menu.classList.remove("active");
+        }
+      });
+
+      function scrollVideos(direction) {
+        const scrollContainer = document.querySelector(".video-row");
+        const video = scrollContainer.querySelector("video");
+        const scrollAmount = video.offsetWidth + 16; // video width + gap
+        scrollContainer.scrollBy({
+        left: direction === "left" ? scrollAmount : -scrollAmount,
+        behavior: "smooth"
+        });
+      }
+
+
+    </script>
+</body>
+</html>

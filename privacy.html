@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Content Creation, Social media visibility" />
+    <meta
+      name="description"
+      content="content creation and visual story telling with Folashade Oluwanifemi"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      />
+    </noscript>
+    <title>Folasade Oluwanifemi</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="index.html" class="nav-title"
+            ><h3>Folasade Oluwanifemi</h3></a
+          >
+          <p>Lifestyle . Fashion . Motivation</p>
+        </div>
+        <div class="nav-right">
+          <a href="index.html#about">About Me</a>
+          <a href="index.html#my-work">My Work</a>
+          <a href="index.html#contact">Contact Me</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="mobile-menu">
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#my-work">My Work</a></li>
+          <li><a href="index,html#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="privacy">
+      <h2>PRIVACY POLICY</h2>
+      <p>
+        Last updated: [20/08/2025]<br />
+        We value your privacy. This Privacy Policy explains how we handle the
+        personal information you share when you use our website contact forms.
+      </p>
+
+      <h3>Information We Collect</h3>
+      <p>
+        When you submit a form on our website, we collect only the name, phone
+        number and email address of our clients which they choose to provide. we
+        do not collect any other personal information.
+      </p>
+
+      <h3>How We Use Your Information</h3>
+      <p>
+        We use the information you provide solely to: Respond to your inquiries,
+        provide customer support, communicate regarding our services and provide
+        any other services our clients request from us. We do not share or trade
+        your personal information to third parties, except as required by law.
+      </p>
+
+      <h3>Form Submission Handling</h3>
+      <p>
+        Our contact forms are powered by <strong>FormSubmit</strong>, a
+        third-party service. Here’s how your information is handled:
+      </p>
+      <ul>
+        <li>
+          When you submit a form, your data passes through FormSubmit’s servers.
+        </li>
+        <li>
+          FormSubmit forwards the information directly to our email address.
+        </li>
+        <li>
+          By default, FormSubmit does not store or keep a copy of your
+          submission after it has been sent.
+        </li>
+      </ul>
+
+      <h3>Data Security</h3>
+      <p>We take reasonable steps to protect your personal information.</p>
+      <h3>Your Rights</h3>
+      <p>
+        You may request that we delete or correct any personal information you
+        have submitted by contacting us using the information provided on our
+        website.
+      </p>
+      <h3>Updates to This Policy</h3>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be
+        posted on this page with the “Last updated” date above.
+      </p>
+      <h3>Contact Us</h3>
+      <p>
+        If you have any questions about our privacy policy, you can contact us
+        at folasadeo680@gmail.com
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p><strong>Folasade Oluwanifemi</strong></p>
+      </div>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/shaiidy001/?igsh=MXNndWFoczdwdTI1aQ%3D%3D#"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@shaidy_nifemi?_t=ZS-8z24umzsqbg&_r=1"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+      <div class="top"><a href="index.html">Back to Home</a></div>
+      <p class="footer-copy">
+        © 2025 Folasade Oluwanifemi. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      function scrollAwards(direction) {
+        const scrollContainer = document.querySelector(".content-row");
+        const scrollAmount = 330;
+        scrollContainer.scrollBy({
+          left: direction === "left" ? -scrollAmount : scrollAmount,
+          behavior: "smooth",
+        });
+      }
+
+      function toggleMenu(el) {
+        const menu = document.querySelector(".mobile-menu");
+        el.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".mobile-menu");
+
+        if (
+          !hamburger.contains(event.target) &&
+          !menu.contains(event.target) &&
+          hamburger.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          menu.classList.remove("active");
+        }
+      });
+
+      function scrollVideos(direction) {
+        const scrollContainer = document.querySelector(".video-row");
+        const video = scrollContainer.querySelector("video");
+        const scrollAmount = video.offsetWidth + 16; // video width + gap
+        scrollContainer.scrollBy({
+          left: direction === "left" ? scrollAmount : -scrollAmount,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>

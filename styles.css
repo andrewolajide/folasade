@@ -185,8 +185,8 @@ position: relative;
 }
 
 .hero-text h1{
-    font-size: 4rem;
-    line-height: 70px;
+    font-size: 5rem;
+    line-height: 6rem;
 }
 
 .hero-text button{
@@ -671,7 +671,7 @@ section.privacy li {
   }
 
 .hero-text h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.8rem;
 }
 
@@ -856,7 +856,7 @@ h2 {
   }
 
 .hero-text h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.8rem;
 }
 
@@ -1026,8 +1026,8 @@ h2 {
   }
 
 .hero-text h1 {
-    font-size: 2.5rem;
-    line-height: 3.2rem;
+    font-size: 3rem;
+    line-height: 4rem;
 }
 
 .about {

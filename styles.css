@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alan Sans', sans-serif;
   background-color: white;
   color:black;
   line-height: 1.6;
@@ -18,11 +18,12 @@ body {
 }
 
 .navbar {
-  background-color: white;
+  background-color: transparent;
   position: absolute;
   width: 100%;
   top: 0;
   z-index: 10;
+  border-bottom: 2px solid white;
 }
 
 .nav-container {
@@ -33,7 +34,7 @@ position: relative;
 }
 
 .nav-container a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
@@ -41,6 +42,15 @@ position: relative;
 
 .nav-container p {
     font-size: smaller;
+    color: white;
+}
+
+.nav-privacy a {
+  color: black;
+}
+
+.nav-privacy p {
+    color: black;
 }
 
 .nav-left, .nav-right {
@@ -132,7 +142,7 @@ position: relative;
 }
 
 .mobile-menu li a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alan Sans', sans-serif;
   display: block;
   padding: 1rem;
   color: black;
@@ -149,7 +159,6 @@ position: relative;
 .hero-section {
   position: relative;
   width: 100%;
-  margin-top: 5rem;
   height: 840px;
 }
 
@@ -185,7 +194,7 @@ position: relative;
     padding: 10px 15px;
     border-radius: 25px;
     border: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Alan Sans', sans-serif;
     font-weight: bold;
     margin-top: 1rem;
     font-size: medium;
@@ -228,9 +237,8 @@ position: relative;
 
 .content-types {
     position: relative;
-    background-color: #111;
+    background-color: #333;
     color: white;
-    height: 530px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -256,8 +264,8 @@ position: relative;
 }
 
 .content-box {
-    height: 350px;
-    width: 300px;
+    height: 450px;
+    width: 370px;
     border: 3px solid white;
     border-radius: 15px;
     background-color: transparent;
@@ -268,8 +276,9 @@ position: relative;
 }
 
 .content-img {
-    height: 260px;
-    width: 250px;
+  margin-top: 2rem;
+    width: 290px;
+    height: 320px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -344,10 +353,9 @@ position: relative;
 }
 
 .contactme {
-    height: 750px;
-    padding: 3rem;
-    margin-bottom: 1rem;
-    background-color: #111;
+    padding: 4rem 3rem;
+    margin-bottom: 3px;
+    background-color: #333;
 }
 
 .contactme h2 {
@@ -398,7 +406,7 @@ position: relative;
 
 .form-group input,
 .form-group textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alan Sans', sans-serif;
   font-size: 1rem;
   padding: 0.6rem;
   border: 2px solid black;
@@ -499,7 +507,7 @@ textarea {
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alan Sans', sans-serif;
 }
 
 .submit-btn:hover {
@@ -509,8 +517,8 @@ textarea {
 .privacy {
   text-align: left;
   margin-top: 5rem;
-  padding: 5% 20%;
-  border-top: 7px solid black;
+  padding: 5% 15%;
+  border-top: 5px solid black;
   border-bottom: 7px solid black;
 }
 
@@ -596,7 +604,19 @@ section.privacy li {
 
 @media (max-width: 600px) {
 
-.nav-container {
+  .navbar {
+    background: white;
+  }
+
+  .nav-container a {
+    color: black;
+  }
+
+  .nav-container p {
+    color: black;
+  }
+
+  .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -680,17 +700,17 @@ h2 {
 }
 
 .content-box {
-    height: 300px;
-    width: 280px;
+    height: 450px;
+    width: 320px;
 }
 
 .content-img {
-    height: 220px;
-    width: 210px;
+    height: 320px;
+    width: 270px;
 }
 
 .content-types {
-    padding: 3rem 6rem;
+    padding: 3rem 5rem;
 }
 
 .video-row {
@@ -768,6 +788,19 @@ h2 {
 }
 
 @media (min-width: 601px) and (max-width: 800px) {
+
+.navbar {
+    background: white;
+  }
+
+  .nav-container a {
+    color: black;
+  }
+
+  .nav-container p {
+    color: black;
+  }
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -852,17 +885,17 @@ h2 {
 }
 
 .content-box {
-    height: 300px;
-    width: 280px;
+    height: 450px;
+    width: 320px;
 }
 
 .content-img {
-    height: 220px;
-    width: 210px;
+    height: 320px;
+    width: 270px;
 }
 
 .content-types {
-    padding: 3rem 7rem;
+    padding: 3rem 5rem;
 }
 
 .video-row {
@@ -1022,17 +1055,17 @@ h2 {
 }
 
 .content-box {
-    height: 300px;
-    width: 280px;
+    height: 450px;
+    width: 320px;
 }
 
 .content-img {
-    height: 220px;
-    width: 210px;
+    height: 320px;
+    width: 270px;
 }
 
 .content-types {
-    padding: 3rem 7rem;
+    padding: 3rem 5rem;
 }
 
 .video-row{
@@ -1040,9 +1073,9 @@ h2 {
 }
 
 .video-row video {
-  height: 500px;
+  height: 550px;
   width: 80%;
-  object-position: 0.5% 0 0 0;
+  object-position: top;
 }
 
 .form-wrapper {

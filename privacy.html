@@ -147,15 +147,6 @@
     </footer>
 
     <script>
-      function scrollAwards(direction) {
-        const scrollContainer = document.querySelector(".content-row");
-        const scrollAmount = 330;
-        scrollContainer.scrollBy({
-          left: direction === "left" ? -scrollAmount : scrollAmount,
-          behavior: "smooth",
-        });
-      }
-
       function toggleMenu(el) {
         const menu = document.querySelector(".mobile-menu");
         el.classList.toggle("active");
@@ -176,15 +167,15 @@
         }
       });
 
-      function scrollVideos(direction) {
-        const scrollContainer = document.querySelector(".video-row");
-        const video = scrollContainer.querySelector("video");
-        const scrollAmount = video.offsetWidth + 16; // video width + gap
-        scrollContainer.scrollBy({
-          left: direction === "left" ? scrollAmount : -scrollAmount,
-          behavior: "smooth",
+      // Close mobile menu when a link is clicked
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const hamburger = document.querySelector(".hamburger");
+          const menu = document.querySelector(".mobile-menu");
+          hamburger.classList.remove("active");
+          menu.classList.remove("active");
         });
-      }
+      });
     </script>
   </body>
 </html>
